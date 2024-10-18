@@ -1,0 +1,239 @@
+.owl-prev, .owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.owl-prev {
+    left: -60px;
+}
+
+.owl-next {
+    right: -60px;
+}
+
+.side-head1{
+    font-family: sans-serif;
+    position: relative;
+    top: 142px;
+    left: 97px;
+    width: 900px;
+}
+
+body {
+    margin: 0%;
+    height: 2000px;
+    font-family: sans-serif; 
+    width: 100%;
+}
+
+h2{
+    display: block;
+    font-size: 5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em ; 
+    margin-inline-start: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.side-dish-1 {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    position: relative;
+    top: 150px;
+    left: 100px;
+    border-bottom: 1px solid rgb(196, 196, 196);
+    padding-bottom: 100px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+.side-dish-card{
+    position: relative;
+    display: block;
+    padding: 10px 30px;
+    font-size: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 1px 6px 0px rgb(0,0,0, .2);
+}
+
+.side-dish-img:hover  {
+    transform: scale(1.05); /* Phóng to ảnh 1.1 lần */
+    transition: transform 2s ease;
+    border-radius: 20px;
+} 
+
+
+
+.heading-line {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 45px;
+}
+
+.heading-line img {
+    margin-right: 15px; /* Optional: space between image and text */
+}
+
+.heading-line span {
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+h4{
+    padding: 16px 10px;
+        font-size: 30px;
+}
+
+
+
+*{
+    font-size: 'Poppins', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    font-family: 'Arial', sans-serif;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+nav .navigation{
+    align-items: center;
+    display: flex;
+}
+
+nav .navigation img{
+    width: 6%;
+    margin-inline: 11px;
+    margin-top: 3px;
+}
+
+.navigation a{
+    display: flex;
+    margin-inline: 11px;
+    margin-top: 1px;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: auto;
+}
+
+nav a{
+    font-weight: bold;
+    margin-inline: 11px;
+    margin-top: 10px;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.5s ease; 
+    cursor: pointer;
+}
+
+.navigation-account a{
+    display: flex;
+    margin-right: 11px;
+    margin-top: 11px;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.5s ease; 
+    cursor: pointer;
+}
+
+.account-link {
+    position: relative;
+    padding: 15px 8px; 
+    border: 2px solid transparent; 
+    transition: border-color 0.5s ease; 
+    border-radius: 4px; 
+}
+
+.account-link:hover {
+    border-color: #df3225; 
+}
+
+nav :hover {
+    color: #f44336; 
+}
+
+nav img{
+    width: 10%;
+}
+
+image-section {
+    margin-top: 20px; 
+}
+
+.slider {
+    width: 100%; 
+    height: auto;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 400%;
+    animation: slide-animation 9s infinite;
+}
+
+.carousel-slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.carousel-slide img {
+    width: auto;
+    height: auto;
+}  
+
+@keyframes slide-animation {
+    0% { transform: translateX(0); } 
+    16.66% { transform: translateX(-100%); }
+    33.33% { transform: translateX(-100%); } 
+    49.98% { transform: translateX(-200%); } 
+    66.64% { transform: translateX(-200%); } 
+    83.3% { transform: translateX(0); }
+    100% { transform: translateX(0); }
+}
